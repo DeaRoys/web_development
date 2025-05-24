@@ -1,4 +1,4 @@
-const name ="Elon Musk";
+const name = "Elon Musk";
 let profession = "Programmer";
 
 if(name == "Dea Roys"){
