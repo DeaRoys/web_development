@@ -3,17 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Badminton</title>
+    <title>Flex-Wrap</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            padding:0;
+            margin: 0;
+        }
+       #layout{
+            display: flex;
+            flex-wrap: wrap;
+       } 
+       #nav{
+            flex-basis:100%;
+            border-bottom:1px solid #aaa;
+            padding: 20px;   
+        }
+    
+       #sidebar{
+            flex-basis:20%;
+            border-right:1px solid #aaa;
+            padding: 20px;
+            border-bottom: 1px solid #aaa;
+        }
+       #content{
+            flex-basis:80%;
+            border: 1px solid red;
+            padding: 20px;
+            border-bottom: 1px solid #aaa;
+        
+    }
+    @media(max-width:640px){
+        #sidebar{
+            flex-basis:100%;
+            border-right: 0;
+        }
+    }
+    @media(max-width:475px){
+        #sidebar{
+            display:none;
+        }
+    }
+    </style>
 </head>
 <body>
-    <h1>Badminton</h1>
-    <a href = "web_development.html">Main Page</a>
-    <p>
-        Badminton is a racquet sport played by either two opposing players (singles) or 
-        two pairs (doubles) who use racquets to hit a shuttlecock over a net. The goal 
-        is to hit the shuttlecock so it lands on the opponent's side of the court, and 
-        players score points when the shuttlecock lands in bounds or when the opponent 
-        fails to return the shuttlecock successfully. 
-    </p>
+    <div id="layout">
+        <div id="nav">
+            Navigation in here
+        </div>
+        <div id="sidebar">
+            Sidebar in here
+        </div>
+        <div id="content">
+            Content in here
+        </div>
+    </div>
 </body>
 </html>
