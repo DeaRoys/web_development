@@ -1,4 +1,4 @@
-const name ="Dea Roys";
+const name ="Elon Musk";
 let profession = "Programmer";
 
 if(name == "Dea Roys"){
@@ -18,4 +18,13 @@ if(age>=21){
 }
 else{
     console.log("NOT old enough to drink alcohol");
+}
+
+const name = "Dea";
+if(name == "Nathan"){
+    console.log("Welcome, Nathan!");
+}else if(name == "Dea") {
+    console.log("Hello Dea");
+}else{
+    console.log("Hello, Guest");
 }
